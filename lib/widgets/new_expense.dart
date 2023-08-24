@@ -42,7 +42,7 @@ class _NewExpenseState extends State<NewExpense> {
       showDialog(
         context: context,
         builder: (ctx) => AlertDialog(
-          title: Text('Invalid input'),
+          title: const Text('Invalid input'),
           content: const Text(
               'please make sure a valid Title,Amount Date and Category wae entered'),
           actions: [
@@ -108,7 +108,7 @@ class _NewExpenseState extends State<NewExpense> {
                   ),
                 ),
               ),
-              const SizedBox(width: 16),
+              const SizedBox(width: 5),
               Expanded(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
